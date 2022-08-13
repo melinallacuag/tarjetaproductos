@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+  
+  <title>Frontend | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      /* font-family:  Montserrat; */
+    }
+    .container{
+      background: #123456;
+      height: 100vh;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: 50%;
+    }
+    .container-tarjeta{
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: repeat(auto-fill, 250px) ;
+      grid-template-rows: 400px;
+    }
+    .container-imagen img{
+      width: 250px;
+      height: 400px;
+      border-radius: 10px 0 0 10px;
+      object-fit:cover;
+    }
+    .container-info{
+      background: #fff;
+      border-radius: 0 10px 10px 0;
+      padding: 1.5rem;
+    }
+    .categoria{
+    letter-spacing: 4px;  
+    font-weight: 500 ,700;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="container">
+    <div class="container-tarjeta">
+      <div class="container-imagen">
+        <img src="images/image-product-desktop.jpg" alt="">
+      </div>
+      <div class="container-info">
+        <p class="categoria">PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div>
+            <span>$149.99</span>
+            <span>$169.99</span>
+          </div>
+        <button>Add to Cart </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+  
+
+</body>
+</html>
