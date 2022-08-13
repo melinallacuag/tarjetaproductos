@@ -22,7 +22,7 @@
       font-size: 14px;
     }
     .container{
-      background:  hsl(14, 32%, 85%); ;
+      background:  hsl(14, 32%, 85%); 
       height: 100vh;
       display: grid;
       justify-content: center;
@@ -122,15 +122,21 @@
 .full-mobile{
   display: none;
 }
+.full-desktop{
+  display: block;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
  
   .container-tarjeta{
-      grid-template-columns: repeat(auto-fit, 320px) ;
+      grid-template-columns: repeat(auto-fit, 300px) ;
       grid-template-rows: 250px;
     }
+    .container-info{
+      gap: 1rem;
+    }
     .container-imagen img{
-      width: 320px;
+      width: 300px;
       height: 250px;
       border-radius: 10px 10px 0 0;
     }
