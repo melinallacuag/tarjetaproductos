@@ -22,12 +22,12 @@
       font-size: 14px;
     }
     .container{
-      background: #123456;
+      background:  hsl(14, 32%, 85%); ;
       height: 100vh;
       display: grid;
       justify-content: center;
       align-content: center;
-      grid-template-columns: 50%;
+      grid-template-columns: 100%;
     }
     .container-tarjeta{
       display: grid;
@@ -43,12 +43,12 @@
       object-fit:cover;
     }
     .container-info{
-      background: #fff;
+      background: hsl(30, 38%, 92%);
       border-radius: 0 10px 10px 0;
       padding: 1.4rem;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
     }
     .categoria{
     letter-spacing: 3px;  
@@ -58,13 +58,13 @@
     margin: 0;
     }
     .titulo{
-    letter-spacing: .75px;  
-
-      line-height: 2.2rem;
+      letter-spacing: .75px;  
+      line-height: 30px;
       font-size: 1.8rem;
       font-weight: 700;
       font-family: 'Fraunces';
     margin: 0;
+    color: hsl(212, 21%, 14%);
     }
     .descripcion{
     font-weight: 500;
@@ -72,9 +72,54 @@
       color: hsl(228, 12%, 48%);
     margin: 0;
     line-height: 1.3rem;
-    text-align:start;
 
     }
+    .price{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+    .price-real{
+      font-size: 1.8rem;
+      font-family: 'Fraunces';
+      color:  hsl(158, 36%, 37%);
+      font-weight: 700;
+
+    }
+    .price-anterior{
+      color: hsl(228, 12%, 48%);
+      font-weight: 500;
+    font-family: 'Montserrat';
+      text-decoration: line-through;
+
+    }
+    .button{
+    font-family: 'Montserrat';
+
+      font-weight: 600;
+    border-radius: 0.35rem;
+    border: transparent;
+    color: var(--eps-black);
+    padding: .8em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    }
+    .btn-succes{
+    color:  hsl(0, 0%, 100%);
+    background-color:   hsl(158, 36%, 37%);
+    transition: .8s ease;   
+}
+.btn-succes:hover{
+    background-color: hsl(158, 36%, 35%);
+}
+
   </style>
 </head>
 <body>
@@ -89,11 +134,13 @@
         <h1 class="titulo">Gabrielle Essence Eau De Parfum</h1>
         <p class="descripcion"> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
           Perfumer-Creator for the House of CHANEL.</p>
-          <div>
-            <span>$149.99</span>
-            <span>$169.99</span>
+          <div class="price">
+            <span class="price-real">$149.99</span>
+            <span class="price-anterior">$169.99</span>
           </div>
-        <button>Add to Cart </button>
+        <button class="button btn-succes">
+          <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+          Add to Cart </button>
       </div>
     </div>
   </div>
